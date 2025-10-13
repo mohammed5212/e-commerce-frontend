@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL ="http://localhost:3000/api/auth"
+const API_URL ="https://e-commerce-wncj.onrender.com/auth"
 
 //login
 export const loginUser =async(Credentials)=>{
@@ -15,7 +15,7 @@ export const loginUser =async(Credentials)=>{
 
 export const registerUser= async(userData)=>{
     try{
-        const res =await axios.post ("http://localhost:3000/api/auth/register/",userData)
+        const res =await axios.post ("https://e-commerce-wncj.onrender.com/api/auth/register/",userData)
         return res.data    //could (message user) or {token}
     }catch(error){
         throw error.response?.data || { message: "Network error or server unreachable." }
