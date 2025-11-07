@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL || "https://e-commerce-vdkn.onrender.com/api";
+const API_URL = import.meta.env.VITE_API_URL || "https://e-commerce-backend-1-btb6.onrender.com/api";
 // Login user
 export const loginUser = async (credentials) => {
   try {
